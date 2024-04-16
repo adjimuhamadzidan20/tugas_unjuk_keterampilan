@@ -1,0 +1,418 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'baloo_bhaijaan';
+	src: url(font/BalooBhaijaan2-Regular.ttf);
+}
+
+/*navigasi bar*/
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+	background-color: limegreen;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40px;
+	color: white;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav .logo {
+/*	background-color: lightblue;*/
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo a {
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    /* background-color: lightblue; */ 
+}
+
+.nav .menu {
+	/*background-color: lightblue;*/
+	padding: 8px 0;
+}
+
+.nav .menu ul li {
+	display: inline-block;
+	margin-left: 50px;
+	padding: 5px 0;
+}
+
+.nav .menu ul li a {
+	font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	padding: 5px 0;
+}
+
+.nav .menu ul li a:hover {
+	color: lightblue;
+}
+
+/* mobile navbar list */
+.nav-list-mobile {
+    display: none;
+    background-color: limegreen;
+    padding: 10px 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-list-mobile ul li {
+    line-height: 38px;
+    list-style: none;
+}
+
+.nav-list-mobile ul li a {
+    font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+.nav #icon {
+    display: none;
+    width: 38px;
+}
+
+/*container*/
+.container .cover {
+	background-image: url(../background/pexels-ryan-baker-129574.jpg);
+	height: 93.2vh;
+	background-size: cover;
+	background-position: center;
+	/*filter: brightness(0.6);*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cover h1 {
+	text-align: center;
+	color: white;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-size: 24px;
+	letter-spacing: 4px;
+	border: 2px solid white;
+	width: 330px;
+	margin: auto;
+	text-transform: uppercase;
+}
+
+/* produk */
+.product {
+    width: 70%;
+    position: relative;
+    margin: auto;
+/*    background-color: lightblue;*/
+    padding-top: 50px;
+    padding-bottom: 85px;
+    /* padding: 50px 0; */
+}
+
+.product h2 {
+    font-family: 'baloo_bhaijaan';
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    /*background-color: lightblue; */
+}
+
+.product .item {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    /*background-color: lightcoral;*/
+}
+
+/* gambar produk */
+.product .item .gb {
+    width: 200px;
+    /*background-color: lightcyan; */
+    margin: 0 25px;
+    margin-bottom: 25px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+}
+
+/* produk */
+.gb img {
+    width: 200px;
+    height: 200px;
+    /*background-color: lightgrey;*/
+    object-fit: contain;
+}
+
+.gb p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.gb .btn {
+    width: 100%;
+    border-radius: 5px;
+    background-color: limegreen;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'baloo_bhaijaan';
+    margin: auto;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.gb .btn .fa-shopping-cart {
+	color: white;
+}
+
+.gb .btn a {
+    text-decoration: none;
+    color: white
+}
+
+.gb .btn:hover {
+    text-align: center;
+    color: white;
+    transition: 0.2s;
+    background-color: #279227;
+}
+
+/*about*/
+.about {
+/*    background-color: #38ada9;*/
+    padding-top: 50px;
+    padding-bottom: 100px;
+    min-height: 70vh;
+    display: flex;
+    align-content: center;
+}
+
+.about .content {
+    width: 60%;
+    margin: auto;
+    color: #1E272E;
+}
+
+.about .content h2 {
+    text-align: center;
+    color: #1E272E;
+    font-family: 'baloo_bhaijaan';
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.about .content p {
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+}
+
+.about .content .p1::first-letter {
+    font-size: 36px;
+}
+
+/* footer */
+footer {
+    background-color: #1e272e;
+    color: white;
+}
+
+footer .footer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+footer .section1, .section2, .section3 {
+    /* background-color: grey; */
+    width: 280px;
+}
+
+footer .section1 h3 {
+    margin-bottom: 15px;
+    font-family: 'baloo_bhaijaan';
+    border-bottom: 1px solid limegreen;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+footer .section1 p {
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+    line-height: 24px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+footer .section2 h3 {
+    margin-bottom: 15px;
+    font-family: 'baloo_bhaijaan';
+    border-bottom: 1px solid limegreen;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+footer .section2 ul li {
+    list-style-type: square;
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+    line-height: 30px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+footer .section2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .section2 ul li a:hover {
+    color: #38ada9;;
+}
+
+footer .section3 h3 {
+    margin-bottom: 15px;
+    font-family: 'baloo_bhaijaan';
+    border-bottom: 1px solid limegreen;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+footer .section3 ul li {
+    list-style-type: none;
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+footer .section3 .fab {
+    margin-right: 8px;
+}
+
+footer .article_footer {
+    text-align: center;
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    footer .footer {
+        flex-direction: column;
+    }
+
+    footer .section1, .section2, .section3 {
+        /* background-color: grey; */
+        width: 500px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about .content {
+        width: 70%;
+    }
+
+    footer .section1, .section2, .section3 {
+        /* background-color: grey; */
+        width: 375px;
+    }
+
+    .gb {
+        width: auto;
+        /* background-color: lightcyan; */
+    }
+    
+    .gb .btn {
+        font-size: 12px;
+    }
+    
+    /* produk */
+    .gb img {
+        width: 100%;
+/*        background-color: lightgrey; */
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        padding: 0 25px;
+    }
+
+    .nav .logo a {
+        font-size: 15px;
+    }
+    
+    .nav .menu {
+        display: none;
+    }
+
+    .nav #icon {
+        display: block;
+        /* background-color: grey; */
+    }
+
+    .about .content {
+        width: 80%;
+    }
+    
+    .product .item {
+        /* background-color: lightcoral; */
+        flex-wrap: wrap;
+    }
+
+    .gb {
+        width: auto;
+        /* background-color: lightcyan; */
+        margin-bottom: 25px;
+    }
+
+    footer .section1, .section2, .section3 {
+        /* background-color: grey; */
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer .section1, .section2, .section3 {
+        /* background-color: grey; */
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cover h1 {
+        width: 275px;
+    }
+}
