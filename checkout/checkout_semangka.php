@@ -20,23 +20,25 @@
 				</div>
 				<div class="form-check">
 					<h2>Checkout</h2>
-					<label for="nama">Nama</label>
-					<br>
-					<input type="text" id="nama" name="nama" placeholder="Nama Pembeli" required>
-					<br>
-					<label for="alamat">Alamat</label>
-					<br>
-					<textarea name="alamat" rows="5" placeholder="Alamat" required></textarea>
-					<br>
-					<label for="no_tlp">No Telp</label>
-					<br>
-					<input type="text" id="no_tlp" name="no_tlp" placeholder="No.Telp" required>
-					<br>
-					<label for="jml">Berat Semangka</label>
-					<br>
-					<input type="text" id="jml" name="jml" placeholder="Jumlah Berat" required>
-					<br>
-					<button type="button" id="pesan">Pesan</button>
+					<form action="../rincian_checkout.php?produk=semangka" method="post">
+						<label for="nama">Nama</label>
+						<br>
+						<input type="text" id="nama" name="nama" placeholder="Nama Pembeli" required>
+						<br>
+						<label for="alamat">Alamat</label>
+						<br>
+						<textarea name="alamat" rows="5" placeholder="Alamat" required></textarea>
+						<br>
+						<label for="no_tlp">No Telp</label>
+						<br>
+						<input type="text" id="no_tlp" name="no_tlp" placeholder="No.Telp" required>
+						<br>
+						<label for="jml">Berat Semangka</label>
+						<br>
+						<input type="text" id="jml" name="jml" placeholder="Jumlah Berat" required>
+						<br>
+						<button type="submit" onclick="return confirm('Yakin ingin memesannya?');">Pesan</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -63,19 +65,6 @@
 		    }
 		}
 
-		let pesan = document.getElementById("pesan");
-		pesan.onclick = function() {
-
-			var nama = document.getElementById("nama").value;
-			var no_tlp = document.getElementById("no_tlp").value;
-			var jml_berat = parseInt(document.getElementById("jml").value);
-			
-			let buah = 'Semangka';
-			let hrgPerKg = 30000;
-			let jumlah 	= jml_berat * hrgPerKg;
-			
-			alert("Nama pembeli : "+ nama +"\nNo. telp : "+no_tlp+"\nBuah yang dipesan " + buah + "\nTotal : " + jumlah);
-		}
 	</script>
 	</body>
 </html>

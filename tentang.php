@@ -17,7 +17,7 @@
     </div>
     <!-- about section -->
     <section class="about" id="about">
-      <div class="content">
+      <div class="content" data-aos="fade-down" data-aos-duration="1000">
         <h2>Tentang</h2>
         <p class="p1">Halo sahabat yang luar biasa, pada kesempatan kali ini izinkan kami dari <strong>Beyourself Fruit</strong>
         untuk memperkenalkan diri. Mudah-mudahan dengan adanya perkenalan ini sahabat-sahabat sekalian akan lebih 
@@ -50,6 +50,11 @@
 	        navbar.style.display = "none";
 	    }
 	}
+  </script>
+
+  <script type="text/javascript" src="aos-master/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>

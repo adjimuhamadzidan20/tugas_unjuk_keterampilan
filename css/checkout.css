@@ -95,6 +95,84 @@
     background-color: #279227;
 }
 
+/*rincian checkout*/
+.rincian-checkout {
+	margin-bottom: 7rem;
+}
+
+.rincian-checkout .wrapper {
+	max-width: 780px;
+	margin: 40px auto;
+	padding: 25px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    color: #1E272E;
+}
+
+.rincian-checkout h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.rincian-checkout .rincian {
+	margin: 12px 0px 10px 0px;
+}
+
+.rincian-checkout .rincian h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.rincian-checkout table {
+	width: 100%;
+	border: none;
+}
+
+.rincian-checkout tr td {
+	padding: 4px 0;
+}
+
+.total {
+	text-align: center;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 10px 0px;
+	margin-bottom: 15px;
+}
+
+.total p {
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.cara-pembayaran {
+	padding: 0px 20px;
+	border-bottom: 1px solid #1E272E;
+	border-top: 1px solid #1E272E;
+	padding-bottom: 12px;
+	padding-top: 12px;
+}
+
+.cetak-pembayaran button {
+	width: 100%;
+	margin-top: 20px;
+	padding: 12px 0;
+	border: none;
+	cursor: pointer;
+	background-color: limegreen;
+	border-radius: 5px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.cetak-pembayaran button:hover {
+	background-color: #279227;
+	transition: 0.2s;
+}
+
 /* responsive */
 @media screen and (max-width: 1024px) {
     footer .footer {
@@ -111,6 +189,10 @@
         border: none;
         width: 100%;
     }
+
+    .rincian-checkout {
+		padding: 0 25px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -131,6 +213,10 @@
 	.checkout .form-check input, textarea {
 		width: 100%;
 		box-sizing: border-box;
+	}
+
+	.rincian-checkout {
+		padding: 0 30px;
 	}
 
 	footer .section1, .section2, .section3, .section4 {
@@ -181,36 +267,56 @@
         width: 300px;
     }
 
+    .rincian-checkout h1 {
+		font-size: 25px;
+	}
+
+	.rincian-checkout .rincian h2 {
+		font-size: 15px;
+	}
+
+	.rincian-checkout table {
+		font-size: 14px;
+	}
+
+	.total h3 {
+		font-size: 16px;
+	}
+
+	.total p {
+		font-size: 15px;
+	}
+
+	.cara-pembayaran {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
     footer .section1, .section2, .section3, .section4 {
-        /* background-color: grey; */
         width: 275px;
     }
 }
 
 @media screen and (max-width: 400px) {
 	.checkout {
-		/* background-color: lightgrey; */
 		width: 275px;
 	}
 }
 
 @media screen and (max-width: 350px) {
 	.checkout {
-		/* background-color: lightgrey; */
 		width: 220px;
 	}
 
 	.checkout .img-product img {
 		width: 175px;
 		height: 175px;
-		/* background-color: salmon; */
 	}
 
 	footer .section1, .section2, .section3, .section4 {
-        /* background-color: grey; */
         width: 245px;
     }
 }

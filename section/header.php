@@ -6,5 +6,7 @@
 <link rel="stylesheet" href="../css/checkout.css">
 <link rel="stylesheet" href="../fontawesome/css/all.css">
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/checkout.css">
 <link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="aos-master/dist/aos.css">
 <title>Beyourself Fruit</title>

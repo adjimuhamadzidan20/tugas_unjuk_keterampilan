@@ -6,7 +6,7 @@
         <div class="menu">
             <ul>
                 <li><a href="index.php">Beranda</a></li>
-                <li><a href="#produk">Produk</a></li>
+                <li><a href="index.php">Produk</a></li>
                 <li><a href="tentang.php">Tentang</a></li>
             </ul>
         </div>
@@ -16,7 +16,7 @@
     <div class="nav-list-mobile">
         <ul>
             <li><a href="index.php">Beranda</a></li>
-            <li><a href="#produk">Produk</a></li>
+            <li><a href="index.php">Produk</a></li>
             <li><a href="tentang.php">Tentang</a></li>
         </ul>
     </div>

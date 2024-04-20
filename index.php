@@ -19,7 +19,7 @@
         <div class="product" id="produk">
             <h2>Pilihan Produk Buah Segar</h2>
             <div class="item">
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb1.png" alt="Apel" title="Apel">
                     <br>
                     <p>Apel</p>
@@ -31,7 +31,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb2.png" alt="Anggur" title="Anggur">
                     <br>
                     <p>Anggur</p>
@@ -43,7 +43,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb3.png" alt="Pisang" title="Pisang">
                     <br>
                     <p>Pisang</p>
@@ -55,7 +55,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                 <div class="gb">
+                 <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb4.png" alt="Alpukat" title="Alpukat">
                     <br>
                     <p>Alpukat</p>
@@ -67,7 +67,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb5.png" alt="Jeruk" title="Jeruk">
                     <br>
                     <p>Jeruk</p>
@@ -79,7 +79,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb6.png" alt="Mangga" title="Mangga">
                     <br>
                     <p>Mangga</p>
@@ -91,7 +91,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb7.png" alt="Melon" title="Melon">
                     <br>
                     <p>Melon</p>
@@ -103,7 +103,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb8.png" alt="Semangka" title="Semangka">
                     <br>
                     <p>Semangka</p>
@@ -115,7 +115,7 @@
                         <i class="fas fa-shopping-cart fa-xs"></i>
                     </div>
                 </div>
-                <div class="gb">
+                <div class="gb" data-aos="fade-down" data-aos-duration="800">
                     <img src="fotoProduk/gb9.png" alt="Strawberry" title="Strawberry">
                     <br>
                     <p>Strawberry</p>
@@ -149,6 +149,11 @@
 		        navbar.style.display = "none";
 		    }
 		}
+    </script>
+
+    <script type="text/javascript" src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
